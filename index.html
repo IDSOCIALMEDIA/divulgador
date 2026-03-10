@@ -19,94 +19,76 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .neon-border {
-            box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
         }
         .text-gradient {
             background: linear-gradient(90deg, #22c55e, #10b981);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 15px;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
     </style>
 </head>
 <body>
 
-    <header class="relative py-16 px-6 flex flex-col items-center text-center overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-500/10 blur-[120px] rounded-full"></div>
+    <header class="relative py-16 px-6 flex flex-col items-center text-center">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-500/10 blur-[120px] rounded-full -z-10"></div>
         
-        <h1 class="text-4xl md:text-6xl font-900 font-extrabold mb-4 tracking-tighter">
+        <h1 class="text-4xl md:text-6xl font-900 font-extrabold mb-4 tracking-tighter uppercase">
             IMPERADOR <span class="text-gradient">DIVULGAÇÃO</span>
         </h1>
         <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-10">
-            A ferramenta definitiva para quem deseja dominar o Whatsapp, Facebook, Telegram e vender no automático, sem perder tempo com postagens manuais.
+            Domine o WhatsApp, Facebook e Telegram. Venda no automático com a ferramenta definitiva de postagens.
         </p>
 
         <div class="w-full max-w-4xl glass p-2 rounded-2xl neon-border">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/AIdF8QGhIG4" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <iframe class="w-full aspect-video rounded-xl shadow-2xl" src="https://www.youtube.com/embed/AIdF8QGhIG4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <a href="#preco" class="mt-12 bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 neon-border">
+        <a href="#preco" class="mt-12 bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-green-500/20">
             QUERO ACESSO IMEDIATO
         </a>
     </header>
 
     <section class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-16">O QUE VOCÊ VAI RECEBER?</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            
             <div class="glass p-8 rounded-2xl">
                 <div class="text-green-500 text-4xl mb-4">📂</div>
                 <h3 class="text-xl font-bold mb-2">Lista Secreta</h3>
-                <p class="text-gray-400">Mais de 100 grupos selecionados para postagem imediata.</p>
+                <p class="text-gray-400 text-sm">Mais de 100 grupos validados para postagem imediata.</p>
             </div>
-
             <div class="glass p-8 rounded-2xl border-green-500/30 border">
                 <div class="text-green-500 text-4xl mb-4">🤖</div>
-                <h3 class="text-xl font-bold mb-2">Postador Automático</h3>
-                <p class="text-gray-400">Software robusto que trabalha 24h por dia para você.</p>
+                <h3 class="text-xl font-bold mb-2">Postador 24h</h3>
+                <p class="text-gray-400 text-sm">Software robusto que trabalha enquanto você descansa.</p>
             </div>
-
             <div class="glass p-8 rounded-2xl">
                 <div class="text-green-500 text-4xl mb-4">🎓</div>
-                <h3 class="text-xl font-bold mb-2">Treinamento VIP</h3>
-                <p class="text-gray-400">Passo a passo simples de como configurar e lucrar.</p>
+                <h3 class="text-xl font-bold mb-2">Treinamento</h3>
+                <p class="text-gray-400 text-sm">Aprenda a configurar e lucrar em poucos minutos.</p>
             </div>
         </div>
     </section>
 
     <section class="py-20 bg-white/5">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-8">VEJA O SISTEMA EM AÇÃO</h2>
-            <div class="video-container glass p-2">
-                <iframe src="https://www.youtube.com/embed/s31b6fudhlY" frameborder="0" allowfullscreen></iframe>
+            <h2 class="text-3xl font-bold mb-8 uppercase tracking-tight">Veja o sistema <span class="text-green-500">em ação</span></h2>
+            <div class="glass p-2 rounded-2xl">
+                <iframe class="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/s31b6fudhlY" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-center text-3xl font-bold mb-12">QUEM USA, RECOMENDA</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="glass p-6 rounded-xl italic text-gray-300">
+    <section class="py-20 px-6 max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-12 uppercase">Quem usa, recomenda</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+            <div class="glass p-8 rounded-xl italic text-gray-300 relative">
+                <span class="text-green-500 text-5xl absolute top-2 left-4 opacity-20">"</span>
                 "Nunca foi tão fácil gerenciar meus grupos. O Imperador realmente automatizou tudo o que eu precisava."
                 <span class="block mt-4 font-bold text-white not-italic">- Carlos A. (Afiliado)</span>
             </div>
-            <div class="glass p-6 rounded-xl italic text-gray-300">
-                "O suporte é excelente e o postador funciona sem bugs. Recomendo muito!"
+            <div class="glass p-8 rounded-xl italic text-gray-300 relative">
+                <span class="text-green-500 text-5xl absolute top-2 left-4 opacity-20">"</span>
+                "O suporte é excelente e o postador funciona sem bugs. Recomendo muito para quem quer escala!"
                 <span class="block mt-4 font-bold text-white not-italic">- Mariana S. (Produtora)</span>
             </div>
         </div>
@@ -114,38 +96,35 @@
 
     <section class="py-20">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-8">POR QUE ESTE É O MELHOR POSTADOR?</h2>
-            <div class="video-container glass p-2">
-                <iframe src="https://www.youtube.com/embed/oc6eAuHJ7Z4" frameborder="0" allowfullscreen></iframe>
+            <h2 class="text-3xl font-bold mb-8 uppercase">Por que somos os <span class="text-green-500">melhores?</span></h2>
+            <div class="glass p-2 rounded-2xl">
+                <iframe class="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/oc6eAuHJ7Z4" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <section id="preco" class="py-24 px-6 text-center relative">
-        <div class="absolute inset-0 bg-green-600/5 -z-10"></div>
-        <div class="max-w-2xl mx-auto glass p-12 rounded-3xl border-2 border-green-500/50">
-            <p class="text-red-500 font-bold uppercase tracking-widest mb-2 italic">Promoção Somente Hoje</p>
-            <h2 class="text-2xl font-bold mb-4">ACESSO COMPLETO</h2>
-            <div class="text-gray-500 line-through text-2xl">De R$ 47,00</div>
-            <div class="text-6xl font-black text-white my-4">POR R$ 20,00</div>
-            <p class="text-gray-400 mb-8 italic">Uma única vez. Sem mensalidades.</p>
+    <section id="preco" class="py-24 px-6 text-center">
+        <div class="max-w-2xl mx-auto glass p-8 md:p-12 rounded-3xl border-2 border-green-500/50 relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-4 py-1 uppercase transform rotate-45 translate-x-4 translate-y-2">Oferta Exclusiva</div>
             
-            <button class="w-full bg-green-600 hover:bg-green-500 text-white font-black py-5 rounded-xl text-2xl transition-all shadow-[0_0_30px_rgba(34,197,94,0.5)]">
-                SIM! QUERO COMPRAR AGORA
+            <p class="text-green-400 font-bold uppercase tracking-widest mb-2">Acesso Vitalício</p>
+            <h2 class="text-2xl font-bold mb-4">OFERTA DE LANÇAMENTO</h2>
+            <div class="text-gray-500 line-through text-xl">De R$ 47,00</div>
+            <div class="text-6xl md:text-7xl font-black text-white my-6">R$ 20,00</div>
+            
+            <button onclick="window.location.href='SEU_LINK_DE_PAGAMENTO'" class="w-full bg-green-600 hover:bg-green-500 text-white font-black py-5 rounded-xl text-2xl transition-all shadow-[0_0_40px_rgba(34,197,94,0.3)] transform hover:scale-[1.02]">
+                QUERO COMPRAR AGORA
             </button>
 
-            <div class="mt-10 flex items-center justify-center gap-4">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_7_dias_garantia.png" alt="Garantia" class="h-16 brightness-200">
-                <p class="text-left text-sm text-gray-400">
-                    <strong>RISCO ZERO!</strong><br>
-                    Você tem 7 dias de garantia total. Se não gostar, devolvemos seu dinheiro.
-                </p>
+            <div class="mt-10 flex flex-col md:flex-row items-center justify-center gap-4 text-gray-400">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_7_dias_garantia.png" alt="Garantia" class="h-14 brightness-150">
+                <p class="text-sm"><strong>GARANTIA TOTAL DE 7 DIAS.</strong><br>Seu sucesso ou seu dinheiro de volta.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-gray-600 text-sm">
-        <p>&copy; 2026 Imperador Divulgação - Todos os direitos reservados.</p>
+    <footer class="py-10 text-center text-gray-600 text-xs border-t border-white/5">
+        <p>&copy; 2026 Imperador Divulgação. Todos os direitos reservados.</p>
     </footer>
 
 </body>
